@@ -39,7 +39,7 @@
                     <p class="text-red-500 text-xs italic">Please choose a password.</p>
                 </div>
                 <div class="flex items-center justify-between">
-                    <button
+                    <button id="sign-in-button"
                         class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
                         type="button">
                         Sign In
@@ -50,7 +50,16 @@
                 </div>
             </form>
         </section>
+        <section id="user-info" class="account flex justify-between">
+            <p id="userMail">User-Email</p>
+            <button id="sign-out-button"
+                class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+                type="button">
+                Sign Out
+            </button>
+        </section>
         <section id="accountState" class="account flex justify-center align-middle mt-16">
+
             <div class=" deposite w-1/3 bg-blue-400 p-12 ml-4 rounded-xl">
                 <h1 class="text-4xl pb-4">Deposit</h1>
                 <h3 id="depositeAmount" class="text-3xl">$0</h3>
@@ -64,9 +73,9 @@
                 <h3 id="balanceAmount" class="text-3xl">$0</h3>
             </div>
         </section>
-        <section>
+        <section id="depositeWithdraw" class="account flex justify-around">
             <form class="flex justify-around mt-5">
-                <fieldset class="border border-solid border-gray-300 bg-blue-200 p-16 rounded-lg">
+                <fieldset class="border border-solid border-gray-300 bg-blue-200 p-16 mr-5 rounded-lg">
                     <!-- <legend>Deposite to your account</legend> -->
                     <label class="block text-gray-700 text-sm font-bold mb-2" for="deposite">
                         Deposite
@@ -74,21 +83,21 @@
                     <input
                         class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                         id="deposite" type="text" placeholder="Deposite Amount">
-                    <button
+                    <button id="depositeButton"
                         class="bg-blue-500 hover:bg-blue-700 text-white font-bold mt-5 py-2 px-4 rounded focus:outline-none focus:shadow-outline"
                         type="button">
                         Deposite
                     </button>
                 </fieldset>
-                <fieldset class="border border-solid border-gray-300 bg-purple-200 p-16 rounded-lg"">
+                <fieldset class="border border-solid border-gray-300 bg-purple-200 p-16 mr-5 rounded-lg"">
                     <!-- <legend>Deposite to your account</legend> -->
                     <label class=" block text-gray-700 text-sm font-bold mb-2" for="deposite">
                     Withdraw
                     </label>
                     <input
                         class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                        id="deposite" type="text" placeholder="Withdraw Amount">
-                    <button
+                        id="withdraw" type="text" placeholder="Withdraw Amount">
+                    <button id="withdrawButton"
                         class="bg-blue-500 hover:bg-blue-700 text-white font-bold mt-5 py-2 px-4 rounded focus:outline-none focus:shadow-outline"
                         type="button">
                         Withdraw
@@ -101,7 +110,7 @@
 
 
     <script src="./js/tailwind.js"></script>
-    <script src="./js/bank.js"></script>
+    <script src="./js/script.js"></script>
 </body>
 
 </html>
